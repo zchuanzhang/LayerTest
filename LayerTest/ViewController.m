@@ -19,7 +19,7 @@
     
     UIImage *img = [UIImage imageNamed:@"fourImg"];
     self.view.layer.contents = (__bridge id)img.CGImage;
-    self.view.layer.contentsGravity = kCAGravityBottomLeft;
+    self.view.layer.contentsGravity = kCAGravityResizeAspect;
 }
 
 
