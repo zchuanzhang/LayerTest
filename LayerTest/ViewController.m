@@ -7,6 +7,7 @@
 
 #import "ViewController.h"
 
+
 @interface ViewController ()
 
 @end
@@ -15,7 +16,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    UIImage *img = [UIImage imageNamed:@"fourImg"];
+    self.view.layer.contents = (__bridge id)img.CGImage;
+    self.view.layer.contentsGravity = kCAGravityBottomLeft;
 }
 
 

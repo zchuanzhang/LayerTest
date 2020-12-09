@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		5CBD64D32580C10D00AC9ABC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CBD64D22580C10D00AC9ABC /* AppDelegate.m */; };
-		5CBD64D62580C10D00AC9ABC /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CBD64D52580C10D00AC9ABC /* SceneDelegate.m */; };
 		5CBD64D92580C10D00AC9ABC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CBD64D82580C10D00AC9ABC /* ViewController.m */; };
 		5CBD64DC2580C10D00AC9ABC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CBD64DA2580C10D00AC9ABC /* Main.storyboard */; };
 		5CBD64DE2580C10F00AC9ABC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CBD64DD2580C10F00AC9ABC /* Assets.xcassets */; };
@@ -16,6 +15,7 @@
 		5CBD64E42580C10F00AC9ABC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CBD64E32580C10F00AC9ABC /* main.m */; };
 		5CBD64EE2580C10F00AC9ABC /* LayerTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CBD64ED2580C10F00AC9ABC /* LayerTestTests.m */; };
 		5CBD64F92580C10F00AC9ABC /* LayerTestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CBD64F82580C10F00AC9ABC /* LayerTestUITests.m */; };
+		5CBD65142580C5A700AC9ABC /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CBD65132580C5A700AC9ABC /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +39,6 @@
 		5CBD64CE2580C10D00AC9ABC /* LayerTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LayerTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CBD64D12580C10D00AC9ABC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5CBD64D22580C10D00AC9ABC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		5CBD64D42580C10D00AC9ABC /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
-		5CBD64D52580C10D00AC9ABC /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
 		5CBD64D72580C10D00AC9ABC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		5CBD64D82580C10D00AC9ABC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		5CBD64DB2580C10D00AC9ABC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -54,6 +52,7 @@
 		5CBD64F42580C10F00AC9ABC /* LayerTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LayerTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CBD64F82580C10F00AC9ABC /* LayerTestUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LayerTestUITests.m; sourceTree = "<group>"; };
 		5CBD64FA2580C10F00AC9ABC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5CBD65132580C5A700AC9ABC /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5CBD65142580C5A700AC9ABC /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,6 +88,7 @@
 				5CBD64EC2580C10F00AC9ABC /* LayerTestTests */,
 				5CBD64F72580C10F00AC9ABC /* LayerTestUITests */,
 				5CBD64CF2580C10D00AC9ABC /* Products */,
+				5CBD65122580C5A700AC9ABC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -106,8 +107,6 @@
 			children = (
 				5CBD64D12580C10D00AC9ABC /* AppDelegate.h */,
 				5CBD64D22580C10D00AC9ABC /* AppDelegate.m */,
-				5CBD64D42580C10D00AC9ABC /* SceneDelegate.h */,
-				5CBD64D52580C10D00AC9ABC /* SceneDelegate.m */,
 				5CBD64D72580C10D00AC9ABC /* ViewController.h */,
 				5CBD64D82580C10D00AC9ABC /* ViewController.m */,
 				5CBD64DA2580C10D00AC9ABC /* Main.storyboard */,
@@ -135,6 +134,14 @@
 				5CBD64FA2580C10F00AC9ABC /* Info.plist */,
 			);
 			path = LayerTestUITests;
+			sourceTree = "<group>";
+		};
+		5CBD65122580C5A700AC9ABC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5CBD65132580C5A700AC9ABC /* QuartzCore.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -269,7 +276,6 @@
 				5CBD64D92580C10D00AC9ABC /* ViewController.m in Sources */,
 				5CBD64D32580C10D00AC9ABC /* AppDelegate.m in Sources */,
 				5CBD64E42580C10F00AC9ABC /* main.m in Sources */,
-				5CBD64D62580C10D00AC9ABC /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -375,7 +381,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -428,7 +434,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
