@@ -1,17 +1,17 @@
 //
-//  LayerTestUITests.m
-//  LayerTestUITests
+//  LayerTestOUITests.m
+//  LayerTestOUITests
 //
 //  Created by chuanzhang on 2020/12/9.
 //
 
 #import <XCTest/XCTest.h>
 
-@interface LayerTestUITests : XCTestCase
+@interface LayerTestOUITests : XCTestCase
 
 @end
 
-@implementation LayerTestUITests
+@implementation LayerTestOUITests
 
 - (void)setUp {
     // Put setup code here. This method is called before the invocation of each test method in the class.
