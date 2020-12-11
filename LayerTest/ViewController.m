@@ -60,14 +60,14 @@
     
     
     
-    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(50, 300, 100, 100)];
-    view.backgroundColor = [UIColor redColor];
-    [self.view addSubview:view];
+//    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(50, 300, 100, 100)];
+//    view.backgroundColor = [UIColor redColor];
+//    [self.view addSubview:view];
     
 //    view.layer.shadowColor = [UIColor blackColor].CGColor;
 //    view.layer.shadowOffset = CGSizeMake(0, 3);
 //    view.layer.shadowRadius = 1.0;
-    view.layer.shadowOpacity = 0.5;
+//    view.layer.shadowOpacity = 0.5;
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
