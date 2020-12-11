@@ -53,13 +53,6 @@
     _imgView.layer.shadowColor = [UIColor redColor].CGColor;
     _imgView.layer.shadowOpacity = 0.7;
     
-    
-    
-   
-    
-    
-    
-    
 //    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(50, 300, 100, 100)];
 //    view.backgroundColor = [UIColor redColor];
 //    [self.view addSubview:view];
@@ -72,7 +65,12 @@
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
 {
+    //2D转换
+    [self changeViewWith2D];
     
+}
+
+- (void)changeViewWith2D {
     _tY += 100.0;
     if (_tY == 500) {
         _tY = 0.0;
@@ -94,7 +92,6 @@
     transform = CGAffineTransformRotate(transform, _angle*M_PI/180);
     
     //缩放
-    
     _scaleX *= 0.5;
     if (_scaleX < 0.5) {
         _scaleX = 5.0;
@@ -109,6 +106,5 @@
     
     _imgView.layer.affineTransform = transform;
 }
-
 
 @end
