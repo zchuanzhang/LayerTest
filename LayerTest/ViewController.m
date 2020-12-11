@@ -70,6 +70,11 @@
     
 }
 
+- (void)changeWith3D {
+    
+}
+
+//2D 转换
 - (void)changeViewWith2D {
     _tY += 100.0;
     if (_tY == 500) {
