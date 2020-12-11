@@ -71,7 +71,7 @@
 }
 
 - (void)changeWith3D {
-    
+    NSLog(@"变换了");
 }
 
 //2D 转换
